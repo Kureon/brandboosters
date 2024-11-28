@@ -11,9 +11,15 @@
   text-transform: $button-text-transform;
   font-weight: $button-font-weight;
   padding: $button-padding;
+  background-color: $butotn0-default-background;
   border: $button-border;
   border-radius: $button-border-radius;
   transition: 275ms ease;
+
+  &:hover,
+  &:focus {
+    background-color: $button-default-hover-background;
+  }
 
   &[data-type="accent"] {
     background-color: $button-accent-background;
