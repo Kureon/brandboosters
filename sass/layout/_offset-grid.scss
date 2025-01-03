@@ -1,0 +1,25 @@
+@use "/sass/abstracts/" as *;
+
+.offset-grid {
+    display: grid;
+    gap: $grid-gap;
+    grid-template-columns: repeat(3, 1fr);
+
+    & > div {
+        grid-column: span 3;
+    }
+
+    @include mq(medium) {
+        & > div {
+            grid-column: span 1;
+        }
+        & > :nth-child(4n + 2),
+        & > :nth-child(4n + 3) {
+          grid-column: span 2;
+        }
+      }
+
+    p {
+        max-width: 32ch;
+    }
+}

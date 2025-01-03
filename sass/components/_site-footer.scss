@@ -14,4 +14,13 @@
       color: $footer-link-color-hover;
     }
   }
+
+  nav {
+    padding-bottom: $size-6;
+  }
+  .fine-print {
+    padding-top: $size-6;
+    padding-bottom: $size-13;
+    border-top: 1px solid $color-neutral-100;
+  }
 }
